@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Experimental Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <style>
+        .nav-container {
+            display: flex;
+            gap: 15px; 
+            white-space: nowrap; 
+            overflow-x: auto;
+            padding: 10px;
+        }
+    </style> -->
+</head>
+
+<body>
+    <header>
+        <h1>Experimental Page</h1>
+        <nav class="nav-container">
+            <a href="home.html">Home</a>
+            <a href="about-me.html">About Me</a>
+            <a href="academics.html">Academics</a>
+            <a href="work.html">Work</a>
+            <a href="experimental.html">Experimental</a>
+            <a href="extra-credit.html">Extra Credit</a>
+        </nav>
+    </header>
+
+    <aside>
+        <dl>
+            <dt><strong>Programming Language:</strong></dt>
+            <dd><abbr title="HyperText Markup Language">HTML</abbr> & <abbr title="Cascading Style Sheets">CSS</abbr></dd>
+
+            <dt><strong>A Quote:</strong></dt>
+            <dd><cite>"Mreow" - Anonymous</cite></dd>
+        </dl>
+    </aside>
+
+    <main>
+        <script>
+            class ConsoleMessage extends HTMLElement {
+                connectedCallback() {
+                    console.log("Hello, world!");
+                }
+            }
+            customElements.define("console-message", ConsoleMessage);
+        </script>
+
+        <console-message></console-message>
+
+        <p>My current cravings:</p>
+        <ol>
+            <li>85c Hokkadio milk bun</li>
+            <li>Strawberry fruit tea</li>
+            <li>Galbi</li>
+        </ol>
+
+        <hgroup>
+            <h2>Hokkaido milk bun</h2>
+            <p>The best bun.</p>
+        </hgroup>
+
+        <iframe src="https://www.85cbakerycafe.com/menu/hokkaido-custard-bun/" title="85c hokkadio bun"></iframe>
+        <p>My favorite 85c bread is <del>ham and cheese bread</del> <ins>hokkadio milk bun</ins>!</p>
+
+        <section>
+            <dialog open>MEEEOOOOWWW</dialog>
+            <h2>Cat</h2>
+            <pre>
+                    ^   ^
+                  (  *_*  )    --
+                (           ) //
+                 \ v    v  / //
+                 /         \//
+                 \   v   v  /
+            </pre>
+            <p><dfn title="Cat">Cat:</dfn> meow</p>
+            <meow-meow style="background-color:Tomato;">Meow!</meow-meow>
+        </section>
+
+        <p>Press <kbd>backspace</kbd> to delete once.</p>
+
+        <section>
+            <h2>Interactive Form</h2>
+            <form>
+                <label for="select-exp">Choose an Experiment:</label>
+                <select id="select-exp" name="experiment">
+                    <optgroup label="Media">
+                        <option value="audio">Audio</option>
+                        <option value="video">Video</option>
+                    </optgroup>
+                    <optgroup label="Graphics">
+                        <option value="canvas">Canvas</option>
+                        <option value="svg">SVG</option>
+                    </optgroup>
+                </select>
+
+                <label for="search-bar">Try Searching:</label>
+                <input type="search" id="search-bar" name="query" placeholder="Type something...">
+
+                <label for="fav-lang">Pick a programming language:</label>
+                <input list="languages" id="fav-lang" name="fav-lang">
+                <datalist id="languages">
+                    <option value="Python">
+                    <option value="JavaScript">
+                    <option value="C++">
+                </datalist>
+            </form>
+        </section>
+    </main>
+
+    <section>
+        <h2>Find a Boba Store</h2>
+        <div>
+            <form action="./search/">
+                <label for="boba">Search:</label>
+                <input type="search" id="boba" name="boba">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+    </section>
+
+    <section>
+        <h2>Multimedia Elements</h2>
+        <audio controls>
+            <source src="placeholder-audio.mp3" type="audio/mpeg">
+            Your browser does not support the audio tag.
+        </audio>
+        <video controls>
+            <source src="placeholder-audio.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <section>
+        <h2>Canvas & SVG Demo</h2>
+        <canvas id="myCanvas" width="200" height="100"></canvas>
+        <script>
+            let canvas = document.getElementById("myCanvas");
+            let ctx = canvas.getContext("2d");
+            ctx.fillStyle = "blue";
+            ctx.fillRect(10, 10, 100, 50);
+        </script>
+        <noscript>Your browser does not support JavaScript!</noscript>
+        <svg width="100" height="100">
+            <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
+        </svg>
+        <template>
+            <h3>Circle</h3>
+        </template>
+    </section>
+
+    <section>
+        <h2>Table</h2>
+        <table>
+            <caption>Sample Data Table</caption>
+            <colgroup>
+                <col style="background-color:#f2f2f2">
+                <col style="background-color:#e6e6e6">
+            </colgroup>
+            <tr>
+                <th>Name</th>
+                <th>Value</th>
+            </tr>
+            <tr>
+                <td>Experiment</td>
+                <td>Success</td>
+            </tr>
+        </table>
+    </section>
+
+    <section>
+        <h2>Details & Summary</h2>
+        <details>
+            <summary>Click to expand</summary>
+            <p>This is an example of the details and summary tags.</p>
+        </details>
+    </section>
+</body>
+</html>

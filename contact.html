@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contact Me</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+        function submitForm() {
+            alert("Form submitted! Yay!");
+        }
+    </script>
+    <style>
+        /* .nav-container {
+            display: flex;
+            gap: 15px; 
+            white-space: nowrap; 
+            overflow-x: auto;
+            padding: 10px;
+        } */
+
+        .contact-container {
+            text-align: center;
+        }
+
+        legend{
+            text-align: center;
+        }
+
+    </style>
+</head>
+
+<body>
+    <nav class="nav-container">
+        <a href="home.html">Home</a>
+        <a href="about-me.html">About Me</a>
+        <a href="academics.html">Academics</a>
+        <a href="work.html">Work</a>
+        <a href="experimental.html">Experimental</a>
+        <a href="extra-credit.html">Extra Credit</a>
+
+    </nav>
+
+    <div class="contact-container">
+        <p>Contact me at: <a href="mailto:anzh.06.03@gmail.com">anzh.06.03@gmail.com</a></p>
+        <p>or</p>
+    </div>
+    
+    <section>
+        <form onsubmit="submitForm(); return false;">
+            <fieldset>
+                <legend>Send a Message</legend>
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Your message..." required></textarea>
+
+                <button type="submit">Send Message</button>
+            </fieldset>
+        </form>
+    </section>
+</body>
+</html>
