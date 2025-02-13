@@ -6,7 +6,7 @@
     padding: 10px;
     font-family: Garamond, serif;
     color: #7886C7;
-    justify-content: space-evenly;
+    justify-content: flex-end;
 }
 
 body{
