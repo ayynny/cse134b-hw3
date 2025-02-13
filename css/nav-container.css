@@ -4,4 +4,9 @@
     white-space: nowrap; 
     overflow-x: auto;
     padding: 10px;
+    font-family: Garamond, serif;
+}
+
+body{
+    font-family: Garamond, serif;
 }
