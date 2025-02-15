@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    justify-content: space-around; 
+    flex-wrap: wrap;
+    align-items: flex-start; 
+    text-align: left;
+    overflow-x: auto;
+    margin: 10px;
+    padding: 20px;
+    gap: 20px; 
+}
+
+.manager, .bobarista, .barista {
+    display: flex;
+    flex-direction: column;
+    width: 30%; 
+    box-sizing: border-box; 
+    padding: 15px; 
+    border: 1px solid #ccc; 
+    background-color: #A9B5DF; 
+    border-radius: 10px; 
+}

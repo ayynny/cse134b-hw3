@@ -1,0 +1,38 @@
+
+.flex-footer{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.flex-body{
+    display: flex;
+    position: absolute;
+    top: 35vh;
+    left: 50%;
+    flex-direction: column; 
+    text-align: left;
+}
+
+.name{
+    font-size: 45px;
+    margin-bottom: 1px;
+}
+
+.subtext{
+    margin-top: 5px;
+    font-size: 25px;
+}
+
+.picture {
+    width: 400px;
+    height: auto;
+    border-radius: 50px; 
+    position: absolute;
+    left: 20%; 
+    top: 45vh;
+    transform: translateY(-50%);
+}
+

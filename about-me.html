@@ -7,6 +7,31 @@
 
     <link rel="stylesheet" href="/css/nav-container.css">
 
+    <style>
+        .picture {
+            width: 400px;
+            height: auto;
+            border-radius: 50px; 
+            position: absolute;
+            left: 10%; 
+            top: 50vh;
+            transform: translateY(-50%);
+        }
+
+        .flex-body{
+            display: flex;
+            position: absolute;
+            top: 30vh;
+            left: 40%;
+            flex-direction: column; 
+            text-align: left;
+            line-height: 2px;
+        }
+
+        .hobbies{
+            line-height: 20px;
+        }
+    </style>
 </head>
 
 <body>
@@ -16,8 +41,6 @@
             <a href="about-me.html">About Me</a>
             <a href="academics.html">Academics</a>
             <a href="work.html">Work</a>
-            <a href="experimental.html">Experimental</a>
-            <a href="extra-credit.html">Extra Credit</a>
             <a href="contact.html" >Contact Me</a>
         </nav>
         <h1>About Me</h1>
@@ -26,20 +49,28 @@
     <div class="container">
         <main>
             <div>
-                <section>
-                    <h2>Introduction</h2>
-                    <p>
-                        <strong>Hii!</strong> I'm passionate about <em>pickleball, manhwa, and gaming</em>. 
-                        I was born in Los Angeles, CA, raised in Alameda, CA, and currently living in La Jolla, CA.
-                    </p>
+                <section class = "flex-body">
+                    <p>I was born in Los Angeles, CA in 2003, raised in Alameda, CA for 18 years, and currently living in La Jolla, CA as of 2023.</p>
+                    <p>I have an older brother and older sister, and my lovely and cute Yorkie Rambo!</p>
+                    <figure>
+                        <figcaption>Hobbies: </figcaption>
+                        <ul class = "hobbies">
+                            <li>Pickleball</li>
+                            <li>Manhwa</li>
+                            <li>Gaming [Sims 4, League of Legends, Teamfight Tactics, Project Makeover, Outworld Trading Company]</li>
+                            <li>Baking</li>
+                            <li>Gym</li>
+                        </ul>
+                    </figure>
+                        
                 </section>
+                
             </div>
             <div>
                 <section>
-                    <h2>My Profile</h2>
                     <picture>
-                        <source srcset="media/profile-pic.jpg" type="image/jpeg">
-                        <img src="media/profile-pic.jpg" style="width: 50%; height: 50%;" alt="Picture of me">
+                        <img class = "picture" srcset="media/meandrambo.jpg" type="image/jpeg" alt="Picture of me and my dog Rambo!">
+                        
                     </picture>
                 </section>
             </div>
