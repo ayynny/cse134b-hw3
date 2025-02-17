@@ -1,8 +1,8 @@
 .flex-footer {
     display: flex;
-    justify-content: center; /* Center footer content */
-    align-items: center; /* Align heart and text */
-    gap: 8px; /* Add space between text and heart */
+    justify-content: center;
+    align-items: center; 
+    gap: 8px; 
     position: absolute;
     bottom: 0;
     left: 50%;
