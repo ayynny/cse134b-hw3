@@ -6,32 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="/css/nav-container.css">
+    <link rel="stylesheet" href="/css/aboutme.css">
 
-    <style>
-        .picture {
-            width: 400px;
-            height: auto;
-            border-radius: 50px; 
-            position: absolute;
-            left: 10%; 
-            top: 50vh;
-            transform: translateY(-50%);
-        }
 
-        .flex-body{
-            display: flex;
-            position: absolute;
-            top: 30vh;
-            left: 40%;
-            flex-direction: column; 
-            text-align: left;
-            line-height: 2px;
-        }
-
-        .hobbies{
-            line-height: 20px;
-        }
-    </style>
 </head>
 
 <body>
@@ -46,8 +23,7 @@
         <h1>About Me</h1>
     </header>
 
-    <div class="container">
-        <main>
+        <main class="container">
             <div>
                 <section class = "flex-body">
                     <p>I was born in Los Angeles, CA in 2003, raised in Alameda, CA for 18 years, and currently living in La Jolla, CA as of 2023.</p>
@@ -62,19 +38,12 @@
                             <li>Gym</li>
                         </ul>
                     </figure>
-                        
                 </section>
                 
             </div>
             <div>
-                <section>
-                    <picture>
-                        <img class = "picture" srcset="media/meandrambo.jpg" type="image/jpeg" alt="Picture of me and my dog Rambo!">
-                        
-                    </picture>
-                </section>
+                <picture> <img class = "picture" srcset="media/meandrambo.jpg" type="image/jpeg" alt="Picture of me and my dog Rambo!"></picture>
             </div>
         </main>
-    </div>
 </body>
 </html>

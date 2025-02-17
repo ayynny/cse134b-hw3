@@ -10,13 +10,23 @@
     gap: 20px; 
 }
 
+.fiscal{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    box-sizing: border-box; 
+    padding: 20px; 
+    background-color: #A9B5DF; 
+    border-radius: 10px; 
+    width: 94%;
+}
+
 .manager, .bobarista, .barista {
     display: flex;
     flex-direction: column;
     width: 30%; 
     box-sizing: border-box; 
     padding: 15px; 
-    border: 1px solid #ccc; 
     background-color: #A9B5DF; 
     border-radius: 10px; 
 }

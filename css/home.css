@@ -1,27 +1,31 @@
-
-.flex-footer{
+.flex-footer {
+    display: flex;
+    justify-content: center; /* Center footer content */
+    align-items: center; /* Align heart and text */
+    gap: 8px; /* Add space between text and heart */
     position: absolute;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
+    padding: 10px;
 }
 
-.flex-body{
+.flex-body {
     display: flex;
     position: absolute;
     top: 35vh;
     left: 50%;
-    flex-direction: column; 
+    flex-direction: column;
     text-align: left;
 }
 
-.name{
-    font-size: 45px;
+.name {
+    font-size: 3vw;
     margin-bottom: 1px;
 }
 
-.subtext{
+.subtext {
     margin-top: 5px;
     font-size: 25px;
 }
@@ -29,10 +33,27 @@
 .picture {
     width: 400px;
     height: auto;
-    border-radius: 50px; 
+    border-radius: 50px;
     position: absolute;
-    left: 20%; 
+    left: 20%;
     top: 45vh;
     transform: translateY(-50%);
 }
+
+/* Heart Animation */
+@keyframes heartPulse {
+    0% { background-color: color-mix(in srgb, red 100%, pink 0%); transform: scale(1); }
+    50% { background-color: color-mix(in srgb, red 50%, pink 50%); transform: scale(1.2); }
+    100% { background-color: color-mix(in srgb, red 100%, pink 0%); transform: scale(1); }
+}
+
+.heart {
+    width: 15px;
+    height: 15px;
+    background-color: color-mix(in srgb, red 100%, pink 0%);
+    display: inline-block;
+    animation: heartPulse 2s infinite ease-in-out;
+    clip-path: polygon(50% 80%, 100% 30%, 75% 0, 50% 15%, 25% 0, 0% 30%);
+}
+
 

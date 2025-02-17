@@ -1,0 +1,33 @@
+.picture {
+    width: 400px;
+    height: auto;
+    border-radius: 50px;
+    position: absolute;
+    left: 10%;
+    top: 50vh;
+    transform: translateY(-50%);
+}
+
+.flex-body {
+    display: flex;
+    position: absolute;
+    top: 30vh;
+    left: 40%;
+    flex-direction: column;
+    text-align: left;
+    line-height: 1.5;
+    max-width: 50vw;
+    
+    .hobbies {
+        padding-left: 20px;
+
+        &:has(li) {
+            line-height: 1.5;
+            margin-top: 10px;
+            
+            li {
+                padding-left: 5px;
+            }
+        }
+    }
+}
